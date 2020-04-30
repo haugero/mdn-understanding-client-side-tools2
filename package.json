@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "parcel build src/index.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node tests/*.js",
+    "build": "npm run test && parcel build src/index.html"
   },
   "keywords": [],
   "author": "Oliver Hauger <oliver.hauger@ionos.com>",
   "license": "ISC",
   "devDependencies": {
+    "axios": "^0.19.2",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.19.0",
