@@ -13,6 +13,7 @@ function test() {
           `https://api.nasa.gov/neo/rest/v1/feed?start_date=${getDate()}&api_key=DEMO_KEY`
       )
       .then(({ data }) => {
+        console.log(data);
         const day = getDate(addDays(new Date(), 1));
 
         // this will also throw if we can't access the value
